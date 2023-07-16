@@ -2,9 +2,9 @@
 --Script should be executable in any database
 
 CREATE TABLE `users` IF NOT EXISTS (
-	`id` INT NOT NULL  AUTO_INCREMENT PRIMARY KEY,
+	`id` INT NOT NULL  PRIMARY KEY AUTO_INCREMENT,
 	`email` VARCHAR (255) NOT NULL UNIQUE,
 	`name` VARCHAR (255),
-	`country` ENUM ( 'US', 'CO', 'TN'),
+	`country` ENUM ( 'US', 'CO', 'TN') NOT NULL,
 
 );
